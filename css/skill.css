@@ -1,0 +1,27 @@
+/*技能列表的樣式*/
+h1:nth-of-type(1){clear:both;}
+h1 span{
+			color:#fff;
+			background:rgb(51,122,183);
+			width:300px;
+			height:25px;
+			font-size:15px;
+			margin-left:10px;
+			text-align: center;
+		}
+a.skill_name
+		{
+			color:blue;
+			display: inline-block;
+		}
+.skill_note
+		{
+			margin-bottom: 100px;
+		}
+a.preview_pic
+		{
+			width:35px;
+			height:46px;
+			margin:0 10px 10px 0;
+			float:left;
+		}
