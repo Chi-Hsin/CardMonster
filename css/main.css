@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e3bf42;
+  background: #5bc2d7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1954,6 +1954,9 @@ pre .javascript .function {
 }
 .footer-inner {
   text-align: center;
+}
+#animate {
+  animation: iconAnimate 1.33s ease-in-out infinite;
 }
 .with-love {
   display: inline-block;
@@ -2805,6 +2808,7 @@ ul.breadcrumb li+li:last-child {
   background: #fff;
   box-shadow: initial;
   border-radius: initial;
+  opacity: 0;
 }
 .sidebar-inner.affix {
   position: fixed;

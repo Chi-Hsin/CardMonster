@@ -5,8 +5,10 @@
 
 
 
+  
 
-<html class="theme-next pisces" lang="zh-TW">
+
+<html class="theme-next pisces use-motion" lang="zh-TW">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -83,7 +85,7 @@
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -105,7 +107,7 @@
 <meta property="og:url" content="https://chi-hsin.github.io/cardmonster/技能一覽/index.html">
 <meta property="og:site_name" content="卡片怪獸資料站">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-05-26T04:51:27.613Z">
+<meta property="og:updated_time" content="2018-05-27T04:47:11.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="技能一覽">
 
@@ -357,7 +359,7 @@
       <div class="post-body">
         
         
-        	
+          <link rel="stylesheet" type="text/css" href="/cardmonster/css/skill.css"> 
         	 
         		<a class="preview_pic" href="#狂怒"><img src="/cardmonster/img/skill/狂怒.png"></a>
         	 
@@ -511,9 +513,9 @@
                   
                     <p><a>近戰</a>傷害增加自身已損失之生命值</p>
                     
+                    
                   
                     <p><blockquote>可搭配<a>吸血</a></blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -526,6 +528,7 @@
                   
                     <p>可被<a>法術護盾</a>抵銷無法被<a>法術反射</a></p>
                     
+                    
                   
                 </blockquote>
               </div>
@@ -537,25 +540,21 @@
                   
                     <p>對一個隨機後排敵人造成真實傷害</p>
                     
+                    
                   
                     <p><blockquote><a>飛翔</a>會影響此技能之命中率</blockquote></p>
-                    
                     
                   
                     <p><blockquote>攻擊力0仍可發動</blockquote></p>
                     
-                    
                   
-                    <p><blockquote>生命值0無法發動</blockquote></p>
-                    
+                    <p><blockquote>生命值0不會發動</blockquote></p>
                     
                   
                     <p><blockquote>具此技能之裝備被破壞時，不會發動</blockquote></p>
                     
-                    
                   
                     <p><blockquote>可由<a>反擊</a>、<a>長手</a>觸發</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -568,25 +567,21 @@
                   
                     <p>被<a>近戰</a>命中時，50%機率對攻擊者發動一次近戰攻擊</p>
                     
+                    
                   
                     <p><blockquote>可觸發<a>吸血</a></blockquote></p>
                     
-                    
                   
-                    <p><blockquote>生命0仍可發動最後一次</blockquote></p>
-                    
+                    <p><blockquote>生命0仍仍可發動</blockquote></p>
                     
                   
                     <p><blockquote><a>飛翔</a>會影響此技能之命中率</blockquote></p>
                     
-                    
                   
                     <p><blockquote>若被擊倒同時也發動擊倒對方，視同勝利</blockquote></p>
                     
-                    
                   
                     <p><blockquote>具此技能之裝備被破壞時，不會發動</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -599,9 +594,12 @@
                   
                     <p>無法成為雙方道具指定目標</p>
                     
+                    
                   
                     <p><blockquote>使<a>沉默</a>、<a>恫嚇</a>、<a>法術抑制</a>、<a>靈魂尖嘯</a>失效</blockquote></p>
                     
+                  
+                    <p><blockquote>場上存在其他盟友怪時，仍會被盟友的<a>群體感染</a>影響</blockquote></p>
                     
                   
                 </blockquote>
@@ -614,17 +612,15 @@
                   
                     <p>可藉由<a>近戰</a>、<a>遠程</a>、<a>隨機傷害</a>、<a>法術</a>、<a>法術反射</a>、<a>反擊</a>觸發</p>
                     
+                    
                   
                     <p><blockquote>上述攻擊命中時，生命與生命上限增加，上限值為99</blockquote></p>
-                    
                     
                   
                     <p><blockquote>無法<a>治療</a>，意味著不能解除<a>感染</a></blockquote></p>
                     
-                    
                   
-                    <p><blockquote>增加的血量，若使用<a>撤退</a>、<a>撤離</a>、<a>反召喚</a>會被重置</blockquote></p>
-                    
+                    <p><blockquote>增加的血量，若使用<a>撤退</a>、<a>撤離</a>、<a>反召喚</a>、<a>靈魂尖嘯</a>會被重置</blockquote></p>
                     
                   
                 </blockquote>
@@ -635,11 +631,23 @@
       				<div class="skill_note">
                 <blockquote>
                   
-                    <p>優先治療遭<a>感染</a>的怪獸，接著依序為其他友方、血量</p>
+                    <p>治療順序為：</p>
+                    
+                    
+                  
+                    <p><blockquote>............優先治療<a>感染</a>狀態</blockquote></p>
+                    
+                  
+                    <p><blockquote>............具感染狀態且血量少</blockquote></p>
+                    
+                  
+                    <p><blockquote>............血量少</blockquote></p>
+                    
+                  
+                    <p><blockquote>............血量相同時，自己</blockquote></p>
                     
                   
                     <p><blockquote>因<a>感染</a>無法發動的技能，治療後下回合始能發動</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -652,13 +660,12 @@
                   
                     <p>給予我方所有具<a>衝鋒</a>怪獸<a>貫穿</a>效果，本回合可再次發動衝鋒</p>
                     
+                    
                   
                     <p><blockquote>貫穿效果永久存在</blockquote></p>
                     
-                    
                   
                     <p><blockquote>可無限發動</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -671,13 +678,12 @@
                   
                     <p>戰鬥開始時，目前手牌中與自身同陣營怪獸卡費用變為均衡數值</p>
                     
+                    
                   
                     <p><blockquote>若手中卡牌低於均衡數值，仍然轉為均衡費用數</blockquote></p>
                     
-                    
                   
                     <p><blockquote>會影響<a>蔑視</a>之發動</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -690,13 +696,9 @@
                   
                     <p>所有敵人於特定回合數內，<a>法術</a>、<a>治療</a>、<a>群體治療</a>失效</p>
                     
+                    
                   
                     <p><blockquote>可被<a>魔力增幅</a>、<a>淨化</a>解除</blockquote></p>
-                    
-                    
-                  
-                    <p><blockquote>無法作用在<a>免疫</a>技能之卡片上</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -709,17 +711,15 @@
                   
                     <p>50%機率使正對面敵人跳過戰鬥階段且<a>飛翔</a>無效</p>
                     
+                    
                   
                     <p><blockquote>優先束縛正對面，次要前排</blockquote></p>
-                    
                     
                   
                     <p><blockquote>對方之<a>追擊</a>、<a>狂怒</a>仍然有效</blockquote></p>
                     
-                    
                   
                     <p><blockquote>此技能機率無法疊加</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -732,9 +732,12 @@
                   
                     <p><a>近戰</a>、<a>遠程</a>攻擊對<a>飛翔</a>技能之怪獸必中，且傷害增加防空數值</p>
                     
+                    
                   
                     <p><blockquote>攻擊被<a>束縛</a>的怪獸仍然有效</blockquote></p>
                     
+                  
+                    <p><blockquote>搭配<a>遠程</a>攻擊具護甲值之怪獸有機率被格檔</blockquote></p>
                     
                   
                 </blockquote>
@@ -747,13 +750,12 @@
                   
                     <p>攻擊時若場上無敵人，隨機移除敵方牌庫的一張牌</p>
                     
+                    
                   
                     <p><blockquote>首回合或非對戰模式下無效</blockquote></p>
                     
-                    
                   
                     <p><blockquote>此技能可疊加</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -766,17 +768,15 @@
                   
                     <p>位於後排可以發動<a>近戰</a>攻擊</p>
                     
+                    
                   
                     <p><blockquote>會觸發敵方<a>機會</a></blockquote></p>
-                    
                     
                   
                     <p><blockquote>搭配<a>潛行</a>，不會觸發<a>機會</a></blockquote></p>
                     
-                    
                   
                     <p><blockquote>可觸發<a>橫掃</a></blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -789,6 +789,7 @@
                   
                     <p>真實傷害，優先破壞護甲值</p>
                     
+                    
                   
                 </blockquote>
               </div>
@@ -800,13 +801,12 @@
                   
                     <p>降低對方場上怪獸<a>近戰</a>、<a>遠程</a>傷害</p>
                     
+                    
                   
                     <p><blockquote>會被<a>感染</a>影響</blockquote></p>
                     
-                    
                   
                     <p><blockquote>此技能可疊加</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -819,17 +819,15 @@
                   
                     <p>真實傷害或物理攻擊命中時，額外造成疾病值之<a>法術</a>傷害，並解除疾病效果</p>
                     
+                    
                   
                     <p><blockquote>可藉由<a>近戰</a>、<a>遠程</a>、<a>隨機傷害</a>、<a>荊棘</a>、<a>侵襲</a>、<a>橫掃</a>、<a>踐踏</a>、<a>追擊</a>觸發</blockquote></p>
-                    
                     
                   
                     <p><blockquote><a>感染</a>後才能發動，發動後才能<a>感染</a></blockquote></p>
                     
-                    
                   
                     <p><blockquote>會被<a>法術護盾</a>抵銷</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -842,9 +840,9 @@
                   
                     <p><a>飛翔</a>迴避物理攻擊後，<a>近戰</a>、<a>遠程</a>傷害增加，持續到敵方回合結束</p>
                     
+                    
                   
                     <p><blockquote>可連續疊加</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -855,15 +853,14 @@
       				<div class="skill_note">
                 <blockquote>
                   
-                    <p>被消滅後，復活ㄧ次，自身生命值轉為生命上限</p>
+                    <p>被消滅後，復活ㄧ次，血量重置並增加生命上限值</p>
+                    
                     
                   
                     <p><blockquote>復活後，原裝備與狀態不會消失</blockquote></p>
                     
-                    
                   
-                    <p><blockquote>使用<a>撤退</a>、<a>撤離</a>、<a>不屈</a>後，血量會被重置</blockquote></p>
-                    
+                    <p><blockquote>使用<a>撤退</a>、<a>撤離</a>、、<a>反召喚</a>、<a>靈魂尖嘯</a>後，血量會被重置</blockquote></p>
                     
                   
                 </blockquote>
@@ -876,13 +873,12 @@
                   
                     <p>被不具此技能的怪獸<a>近戰</a>、<a>橫掃</a>攻擊有50%的迴避率</p>
                     
+                    
                   
                     <p><blockquote>被不具此技能的怪獸<a>遠程</a>攻擊有25%的迴避率</blockquote></p>
                     
-                    
                   
                     <p><blockquote>被同為擁有此技能、<a>防空</a>的怪獸攻擊必中</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -895,13 +891,12 @@
                   
                     <p>使前排敵人與隨機後排敵人交換位置</p>
                     
+                    
                   
                     <p><blockquote>若當回合<a>感染</a>對方具備<a>鼓舞士氣</a>之卡片時，下一回合始能發動</blockquote></p>
                     
-                    
                   
                     <p><blockquote>能觸發<a>追擊</a></blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -914,9 +909,9 @@
                   
                     <p>若對方具<a>不屈</a>技能時，仍會復活</p>
                     
+                    
                   
                     <p><blockquote>死亡若造成位移可觸發<a>追擊</a></blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -929,9 +924,9 @@
                   
                     <p>對有護甲敵人造成<a>近戰</a>、<a>遠程</a>傷害時，傷害增加</p>
                     
+                    
                   
                     <p><blockquote>搭配<a>遠程</a>時，攻擊不會被護甲格檔</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -944,13 +939,12 @@
                   
                     <p>破壞敵人護甲時，剩餘數值仍然可對敵人造成傷害</p>
                     
+                    
                   
                     <p><blockquote>可藉由<a>近戰</a>、<a>遠程</a>、<a>隨機傷害</a>、<a>荊棘</a>、<a>侵襲</a>、<a>橫掃</a>、<a>踐踏</a>觸發</blockquote></p>
                     
-                    
                   
                     <p><blockquote>可搭配<a>破甲</a></blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -963,13 +957,12 @@
                   
                     <p>所有與自身同陣營的怪獸<a>隨機傷害</a>造成之傷害提升至最大值</p>
                     
+                    
                   
                     <p><blockquote>此效果持續至敵方回合結束</blockquote></p>
                     
-                    
                   
                     <p><blockquote>會被<a>感染</a>影響</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -982,9 +975,9 @@
                   
                     <p>清除單體友方的<a>感染</a>、<a>束縛</a>、<a>沉默</a>、<a>恫嚇</a>、<a>法術抑制</a>狀態</p>
                     
+                    
                   
                     <p><blockquote>負面狀態可在本回合立刻移除，相關BUFF仍然可在下回合發動</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -997,6 +990,7 @@
                   
                     <p>可藉由<a>近戰</a>、<a>遠程</a>觸發，命中時破壞敵方之裝備</p>
                     
+                    
                   
                 </blockquote>
               </div>
@@ -1008,17 +1002,18 @@
                   
                     <p>真實傷害，優先破壞護甲值</p>
                     
+                    
                   
                     <p><blockquote>可觸發<a>貫穿</a>、<a>感染</a></blockquote></p>
                     
+                  
+                    <p><blockquote>具此技能之裝備被破壞時，仍可發動</blockquote></p>
                     
                   
                     <p><blockquote>若造成敵人死亡時可觸發<a>水晶萃取</a>，但具<a>不屈</a>怪獸例外</blockquote></p>
                     
-                    
                   
                     <p><blockquote>兩方生命皆為0且同時雙方皆無怪獸時，此技能發動方勝利</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1031,17 +1026,18 @@
                   
                     <p>敵人在本回合位置變化時，對其造成真實傷害</p>
                     
-                  
-                    <p><blockquote>可藉由<a>恐懼</a>、<a>反召喚</a>、死亡造成位移觸發</blockquote></p>
                     
+                  
+                    <p><blockquote>可藉由<a>恐懼</a>、對敵方使用的<a>反召喚</a>、<a>靈魂尖嘯</a>或死亡造成位移觸發</blockquote></p>
+                    
+                  
+                    <p><blockquote>對我方使用<a>撤退</a>、<a>撤離</a>、<a>反召喚</a>造成的位移不會觸發</blockquote></p>
                     
                   
                     <p><blockquote>可觸發<a>感染</a>、<a>毒爆</a></blockquote></p>
                     
-                    
                   
                     <p><blockquote>不會被<a>束縛</a>影響</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1054,9 +1050,9 @@
                   
                     <p>額外發動一次<a>近戰</a>、<a>遠程</a>、<a>隨機技能</a>、<a>法術</a></p>
                     
+                    
                   
                     <p><blockquote><a>反擊</a>、<a>橫掃</a>可被額外觸發</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1069,17 +1065,15 @@
                   
                     <p>成為<a>遠程</a>的優先攻擊目標</p>
                     
+                    
                   
                     <p><blockquote>場上有數個嘲諷時，隨機射擊</blockquote></p>
-                    
                     
                   
                     <p><blockquote>若同時擁有<a>潛行</a>，嘲諷優先</blockquote></p>
                     
-                    
                   
                     <p><blockquote>可搭配<a>狂怒</a></blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1092,6 +1086,7 @@
                   
                     <p>破壞目標之裝備</p>
                     
+                    
                   
                 </blockquote>
               </div>
@@ -1103,17 +1098,15 @@
                   
                     <p>使用時消滅場上所有費用小於該值的盟友、敵人、裝備</p>
                     
+                    
                   
                     <p><blockquote>僅在與玩家對戰時有效</blockquote></p>
-                    
                     
                   
                     <p><blockquote>此技能不可疊加</blockquote></p>
                     
-                    
                   
                     <p><blockquote>可觸發<a>水晶萃取</a></blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1126,13 +1119,12 @@
                   
                     <p>位於後排時，不會成為<a>遠程</a>、<a>法術</a>的攻擊目標</p>
                     
+                    
                   
                     <p><blockquote>若同時擁有<a>嘲諷</a>，嘲諷優先</blockquote></p>
                     
-                    
                   
                     <p><blockquote>仍會被<a>恐懼</a>、<a>法術濺射</a>影響</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1145,9 +1137,9 @@
                   
                     <p>此卡使用後，獲得水晶</p>
                     
-                  
-                    <p><blockquote>僅限道具貓的報恩擁有，會覆蓋其他裝備</blockquote></p>
                     
+                  
+                    <p><blockquote>會覆蓋其他裝備</blockquote></p>
                     
                   
                 </blockquote>
@@ -1160,17 +1152,15 @@
                   
                     <p>將目標盟友洗入我方牌庫</p>
                     
+                    
                   
                     <p><blockquote>裝備不會返回手中</blockquote></p>
-                    
                     
                   
                     <p><blockquote><a>吸血</a>增加的血量將重置</blockquote></p>
                     
-                    
                   
                     <p><blockquote>有機率直接出現在下一張手牌</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1183,21 +1173,18 @@
                   
                     <p>將此卡洗入我方牌庫，費用+1</p>
                     
+                    
                   
                     <p><blockquote>裝備不會返回手中</blockquote></p>
-                    
                     
                   
                     <p><blockquote><a>吸血</a>增加的血量將重置</blockquote></p>
                     
-                    
                   
                     <p><blockquote>有機率直接出現在下一張手牌</blockquote></p>
                     
-                    
                   
                     <p><blockquote>返回手牌後增加的費用若高於<a>蔑視</a>的數值，將使之無效</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1210,17 +1197,15 @@
                   
                     <p>使敵方獲得疾病效果</p>
                     
+                    
                   
                     <p><blockquote>使<a>鼓舞士氣</a>、<a>射擊指揮</a>、<a>強運</a>、<a>恫嚇</a>、<a>法術反射</a>失效</blockquote></p>
-                    
                     
                   
                     <p><blockquote>可藉由<a>近戰</a>、<a>遠程</a>、<a>隨機傷害</a>、<a>荊棘</a>、<a>侵襲</a>、<a>橫掃</a>、<a>踐踏</a>、<a>追擊</a>觸發</blockquote></p>
                     
-                    
                   
                     <p><blockquote>疾病數值可疊加</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1233,13 +1218,12 @@
                   
                     <p>自身登場回合，增加<a>近戰</a>傷害</p>
                     
+                    
                   
                     <p><blockquote>此效果持續至敵方回合結束</blockquote></p>
                     
-                    
                   
                     <p><blockquote>可藉由<a>突擊</a>無限發動</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1252,21 +1236,18 @@
                   
                     <p><a>近戰</a>、<a>遠程</a>攻擊敵人造成死亡時，對其餘敵人造成剩餘傷害</p>
                     
+                    
                   
                     <p><blockquote>可觸發<a>感染</a>、<a>毒爆</a>、<a>貫穿</a></blockquote></p>
-                    
                     
                   
                     <p><blockquote>不會觸發<a>粉碎</a>、<a>破甲</a></blockquote></p>
                     
-                    
                   
                     <p><blockquote>會被技能<a>護盾</a>、護甲值裝備抵銷</blockquote></p>
                     
-                    
                   
                     <p><blockquote>施放方如果死亡，此技能不會發動</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1279,21 +1260,18 @@
                   
                     <p>敵人位於後排發動<a>近戰</a>後，對其發動<a>遠程</a>攻擊</p>
                     
+                    
                   
                     <p><blockquote>可同時觸發<a>箭雨</a></blockquote></p>
-                    
                     
                   
                     <p><blockquote>不受<a>嘲諷</a>影響</blockquote></p>
                     
-                    
                   
                     <p><blockquote>可多次被觸發，但位於前排時無法發動</blockquote></p>
                     
-                    
                   
                     <p><blockquote><a>長手</a>搭配<a>潛行</a>時，不會觸發此技能</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1306,9 +1284,9 @@
                   
                     <p>對所有後排敵人發動<a>遠程</a>攻擊</p>
                     
+                    
                   
                     <p><blockquote>不受<a>嘲諷</a>、<a>潛行</a>影響</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1321,13 +1299,12 @@
                   
                     <p>減免<a>近戰</a>、<a>遠程</a>傷害</p>
                     
+                    
                   
                     <p><blockquote>無法減免真實傷害</blockquote></p>
                     
-                    
                   
                     <p><blockquote>可抵消<a>破甲</a>、<a>踐踏</a></blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1340,6 +1317,7 @@
                   
                     <p>使<a>反擊</a>、<a>荊棘</a>、<a>束縛</a>、<a>機會</a>無效</p>
                     
+                    
                   
                 </blockquote>
               </div>
@@ -1350,6 +1328,7 @@
                 <blockquote>
                   
                     <p>除具<a>長手</a>以外的怪獸外，僅能在前排使用</p>
+                    
                     
                   
                 </blockquote>
@@ -1362,9 +1341,9 @@
                   
                     <p>優先攻擊正對面</p>
                     
-                  
-                    <p><blockquote>會被<a>潛行</a>影響</blockquote></p>
                     
+                  
+                    <p><blockquote>攻擊目標會受<a>潛行</a>影響</blockquote></p>
                     
                   
                 </blockquote>
@@ -1377,13 +1356,12 @@
                   
                     <p>除具<a>近身射擊</a>的怪獸外，僅能在後排使用</p>
                     
+                    
                   
                     <p><blockquote>優先攻擊斜對面</blockquote></p>
                     
-                    
                   
-                    <p><blockquote>會被<a>潛行</a>影響</blockquote></p>
-                    
+                    <p><blockquote>攻擊目標會受<a>潛行</a>影響</blockquote></p>
                     
                   
                 </blockquote>
@@ -1396,17 +1374,15 @@
                   
                     <p>將目標盟友或敵人洗入擁有者的牌庫</p>
                     
+                    
                   
                     <p><blockquote>裝備不會返回手中</blockquote></p>
-                    
                     
                   
                     <p><blockquote><a>吸血</a>增加的血量將重置</blockquote></p>
                     
-                    
                   
                     <p><blockquote>有機率直接出現在下一張手牌</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1419,13 +1395,12 @@
                   
                     <p>真實傷害</p>
                     
+                    
                   
                     <p><blockquote>可搭配<a>強運</a></blockquote></p>
                     
-                    
                   
                     <p><blockquote>可觸發<a>感染</a>、<a>毒爆</a>、<a>貫穿</a></blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1438,13 +1413,12 @@
                   
                     <p>消滅敵人時，獲得若干水晶</p>
                     
+                    
                   
                     <p><blockquote>具<a>不屈</a>技能之卡片死亡時，無法觸發</blockquote></p>
                     
-                    
                   
                     <p><blockquote>此技能可疊加</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1457,25 +1431,21 @@
                   
                     <p>被<a>法術</a>攻擊時，有75%機率反射傷害</p>
                     
+                    
                   
                     <p><blockquote>反射傷害不會被<a>法術護盾</a>抵銷</blockquote></p>
-                    
                     
                   
                     <p><blockquote>雙方皆具有此技能時，一定次數後仍會命中</blockquote></p>
                     
-                    
                   
                     <p><blockquote>無法反射<a>法術濺射</a>之傷害</blockquote></p>
-                    
                     
                   
                     <p><blockquote>可觸發<a>法術濺射</a>、<a>吸血</a></blockquote></p>
                     
-                    
                   
                     <p><blockquote>會被<a>感染</a>影響</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1488,13 +1458,12 @@
                   
                     <p>降低所有敵人<a>法術</a>傷害，持續至敵方回合結束</p>
                     
+                    
                   
                     <p><blockquote>不具<a>法術</a>技能之怪獸不被影響</blockquote></p>
                     
-                    
                   
                     <p><blockquote>會被<a>感染</a>影響</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1507,6 +1476,7 @@
                   
                     <p>說明同<a>治療</a></p>
                     
+                    
                   
                 </blockquote>
               </div>
@@ -1518,9 +1488,9 @@
                   
                     <p>可被<a>法術護盾</a>抵銷</p>
                     
+                    
                   
                     <p><blockquote>無法被<a>法術反射</a></blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1533,6 +1503,7 @@
                   
                     <p>可抵消<a>法術</a>、<a>法術濺射</a>、<a>毒爆</a>之傷害</p>
                     
+                    
                   
                 </blockquote>
               </div>
@@ -1544,25 +1515,21 @@
                   
                     <p>位於前排時，將<a>遠程</a>轉為<a>近戰</a>攻擊</p>
                     
+                    
                   
                     <p><blockquote>若本身具<a>近戰</a>技能，能各攻擊一次</blockquote></p>
-                    
                     
                   
                     <p><blockquote>不被<a>荊棘</a>影響，但仍會被<a>嘲諷</a></blockquote></p>
                     
-                    
                   
                     <p><blockquote>對方無法觸發<a>機會</a></blockquote></p>
-                    
                     
                   
                     <p><blockquote>仍有<a>近戰</a>命中率的問題</blockquote></p>
                     
-                    
                   
                     <p><blockquote>對具護甲值怪獸必中</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1575,6 +1542,7 @@
                   
                     <p>☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</p>
                     
+                    
                   
                 </blockquote>
               </div>
@@ -1586,17 +1554,15 @@
                   
                     <p>所有盟友的<a>遠程</a>傷害增加，僅最大值生效，持續至敵方回合結束</p>
                     
+                    
                   
                     <p><blockquote>使<a>遠程</a>不會被護甲格檔</blockquote></p>
-                    
                     
                   
                     <p><blockquote>此技能可疊加</blockquote></p>
                     
-                    
                   
                     <p><blockquote>會被<a>感染</a>、<a>束縛</a>影響</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1609,6 +1575,7 @@
                   
                     <p>真實傷害，優先破壞護甲值</p>
                     
+                    
                   
                 </blockquote>
               </div>
@@ -1620,9 +1587,9 @@
                   
                     <p><a>飛翔</a>迴避物理攻擊後，<a>近戰</a>、<a>遠程</a>傷害增加，持續至敵方回合結束</p>
                     
+                    
                   
                     <p><blockquote>可連續疊加</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1635,17 +1602,15 @@
                   
                     <p>使所有敵人獲得疾病效果</p>
                     
+                    
                   
                     <p><blockquote>使<a>鼓舞士氣</a>、<a>射擊指揮</a>、<a>強運</a>、<a>恫嚇</a>、<a>魔法反射</a>失效</blockquote></p>
-                    
                     
                   
                     <p><blockquote>可被<a>治療</a>、<a>群體治療</a>清除</blockquote></p>
                     
-                    
                   
                     <p><blockquote>疾病數值可疊加</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1658,13 +1623,12 @@
                   
                     <p>清除所有盟友的<a>沉默</a>狀態</p>
                     
+                    
                   
                     <p><blockquote>此技能可數次觸發疊加<a>法術</a>傷害</blockquote></p>
                     
-                    
                   
                     <p><blockquote>除道具裝備外，不影響不具<a>法術</a>技能之怪獸</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1677,13 +1641,12 @@
                   
                     <p>所有盟友<a>近戰</a>傷害增加，僅最大值生效，使<a>恐懼</a>無效</p>
                     
+                    
                   
                     <p><blockquote>此技能可疊加</blockquote></p>
                     
-                    
                   
                     <p><blockquote>會被<a>感染</a>、<a>束縛</a>影響</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1696,6 +1659,7 @@
                   
                     <p>無法直接使用，僅能被獻祭</p>
                     
+                    
                   
                 </blockquote>
               </div>
@@ -1707,17 +1671,15 @@
                   
                     <p><a>法術</a>攻擊命中敵人時，對其相鄰敵人造成法術傷害</p>
                     
+                    
                   
                     <p><blockquote>會被<a>法術護盾</a>抵銷</blockquote></p>
-                    
                     
                   
                     <p><blockquote>可藉由<a>法術反射</a>觸發</blockquote></p>
                     
-                    
                   
                     <p><blockquote>無法被<a>法術反射</a></blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1730,6 +1692,7 @@
                   
                     <p>增加裝備時的護甲值</p>
                     
+                    
                   
                 </blockquote>
               </div>
@@ -1740,6 +1703,7 @@
                 <blockquote>
                   
                     <p>此卡被獻祭時，額外獲得水晶</p>
+                    
                     
                   
                 </blockquote>
@@ -1752,9 +1716,12 @@
                   
                     <p>增加所有盟友的<a>治療</a>值</p>
                     
-                  
-                    <p><blockquote>此技能可回合疊加，且永久存在</blockquote></p>
                     
+                  
+                    <p><blockquote>此技能可回合疊加</blockquote></p>
+                    
+                  
+                    <p><blockquote>返回手牌後，效果仍然存在</blockquote></p>
                     
                   
                 </blockquote>
@@ -1767,9 +1734,12 @@
                   
                     <p>增加所有盟友的<a>法術</a>傷害值</p>
                     
-                  
-                    <p><blockquote>此技能可回合疊加，且永久存在</blockquote></p>
                     
+                  
+                    <p><blockquote>此技能可回合疊加</blockquote></p>
+                    
+                  
+                    <p><blockquote>返回手牌後，效果仍然存在</blockquote></p>
                     
                   
                 </blockquote>
@@ -1782,9 +1752,12 @@
                   
                     <p>增加所有盟友的<a>隨機傷害</a>值</p>
                     
+                    
                   
                     <p><blockquote>此技能可回合疊加，且永久存在</blockquote></p>
                     
+                  
+                    <p><blockquote>返回手牌後，效果仍然存在</blockquote></p>
                     
                   
                 </blockquote>
@@ -1797,13 +1770,12 @@
                   
                     <p>優先將正對面敵人洗入敵方牌庫</p>
                     
+                    
                   
                     <p><blockquote>此技能與<a>反召喚</a>、<a>撤退</a>相同，位移可觸發<a>追擊</a></blockquote></p>
                     
-                    
                   
                     <p><blockquote>對擁有<a>免疫</a>的卡片無效</blockquote></p>
-                    
                     
                   
                 </blockquote>
@@ -1816,14 +1788,15 @@
                   
                     <p>你了解特殊紀念的意義嗎?</p>
                     
+                    
                   
                 </blockquote>
               </div>
 			    
-          <p><link rel="stylesheet" type="text/css" href="/cardmonster/css/skill.css"></p>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/cardmonster/js/skill.js"></script>
-
+          
+          
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script type="text/javascript" src="/cardmonster/js/skill.js"></script>
         
       </div>
       
