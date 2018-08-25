@@ -1,5 +1,5 @@
 /*技能列表的樣式*/
-h1:nth-of-type(1){clear:both;}
+h1:nth-of-type(1){clear:both;margin:0;padding: 0}
 h1 span{
 			color:#fff;
 			background:rgb(51,122,183);
@@ -25,3 +25,25 @@ a.preview_pic
 			margin:0 10px 10px 0;
 			float:left;
 		}
+#skill_all_box{
+	    margin:0 auto;
+		width: 500px;
+		height: 150px;
+		overflow:hidden;
+		/*background: blue;*/
+		position: relative;}
+#arrange{
+	    height: 30px;
+		width: 100%;
+		background: rgba(256,256,256,0.9);
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		cursor: pointer;
+		position: absolute;
+		top:120px;
+		left:0;}
+#arrange:hover{
+		background: rgba(128,128,128,0.1);
+		color:#fff;
+		}		

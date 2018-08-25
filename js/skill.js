@@ -16,4 +16,21 @@ $(function(){
 		$(this).append(note_word());
 		},function(){$(this).find("span").remove()} //滑鼠移開後移除
 	)
+	$("#arrange").click(function(){ //展開或閉合技能框框
+		if($(this).position().top == "120")
+		{
+			$(this).css("top","450px")
+			       .text("縮合▲")
+				   .parent()
+				   .css({"height":"480px"});
+		}
+		else
+		{
+           $(this).css("top","120px")
+           		  .text("縮合▼")
+				  .parent()
+				  .css({"height":"150px"});
+		}
+		
+	})
 })
